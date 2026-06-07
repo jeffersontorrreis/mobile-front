@@ -8,9 +8,9 @@ import { colors } from '../../shared/colors';
 
 export type PrivateTabParamList = {
   Inicio: undefined;
-  Busca: undefined;
-  Hits: undefined;
-  Pedidos: undefined;
+  Titulo1: undefined;
+  Titulo2: undefined;
+  Titulo3: undefined;
   Perfil: undefined;
 };
 
@@ -30,16 +30,16 @@ function NotifDot() {
   return <View style={styles.notifDot} />;
 }
 
-function BuscaScreen() {
-  return <PlaceholderScreen title="Busca" />;
+function Titulo1Screen() {
+  return <PlaceholderScreen title="Titulo1" />;
 }
 
-function HitsScreen() {
-  return <PlaceholderScreen title="Hits" />;
+function Titulo2Screen() {
+  return <PlaceholderScreen title="Titulo2" />;
 }
 
-function PedidosScreen() {
-  return <PlaceholderScreen title="Pedidos" />;
+function Titulo3Screen() {
+  return <PlaceholderScreen title="Titulo3" />;
 }
 
 export function AppTabNavigator() {
@@ -71,13 +71,13 @@ export function AppTabNavigator() {
         }}
       />
       <Tab.Screen
-        name="Busca"
-        component={BuscaScreen}
+        name="Titulo1"
+        component={Titulo1Screen}
         options={{
           tabBarLabel: 'Titulo',
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
-              name={focused ? 'receipt' : 'search-outline'}
+              name={focused ? 'analytics-sharp' : 'analytics-sharp'}
               size={23}
               color={color}
             />
@@ -85,13 +85,13 @@ export function AppTabNavigator() {
         }}
       />
       <Tab.Screen
-        name="Hits"
-        component={HitsScreen}
+        name="Titulo2"
+        component={Titulo2Screen}
         options={{
           tabBarLabel: 'Titulo',
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
-              name={focused ? 'receipt' : 'flash-outline'}
+              name={focused ? 'flame' : 'flame-outline'}
               size={23}
               color={color}
             />
@@ -99,8 +99,8 @@ export function AppTabNavigator() {
         }}
       />
       <Tab.Screen
-        name="Pedidos"
-        component={PedidosScreen}
+        name="Titulo3"
+        component={Titulo3Screen}
         options={{
           tabBarLabel: 'Titulo',
           tabBarIcon: ({ color, focused }) => (
