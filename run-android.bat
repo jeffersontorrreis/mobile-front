@@ -1,0 +1,6 @@
+@echo off
+echo Limpando ADB...
+adb kill-server
+adb start-server
+echo Iniciando Android...
+npx expo run:android

@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "agp-mobile",
+    "slug": "agp-mobile",
+    "version": "1.0.0",
+    "scheme": "agp-mobile",
+    "android": {
+      "package": "com.anonymous.agpmobile"
+    }
+  }
+}
