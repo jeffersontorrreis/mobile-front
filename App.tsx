@@ -19,6 +19,7 @@ import { AuthProvider } from './src/contexts/auth.context';
 import { NavigationRoutes } from './src/routes';
 
 import './src/styles/global.css';
+import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
   const [nunitoLoaded] = useFonts({
@@ -41,10 +42,13 @@ export default function App() {
   }
 
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
-      <AuthProvider>
-        <NavigationRoutes />
-      </AuthProvider>
-    </GestureHandlerRootView>
+    <>
+      <StatusBar style="dark" hidden={true} />
+      <GestureHandlerRootView style={{ flex: 1 }}>
+        <AuthProvider>
+          <NavigationRoutes />
+        </AuthProvider>
+      </GestureHandlerRootView>
+    </>
   );
 }

@@ -34,7 +34,7 @@ export function AppInput({
       {secureTextEntry && (
         <TouchableOpacity onPress={() => setShowPassword(prev => !prev)}>
           <Ionicons
-            name={showPassword ? 'eye-off-outline' : 'eye-outline'}
+            name={showPassword ? 'eye-outline' : 'eye-off-outline'}
             size={18}
             color={colors.textLight}
           />
@@ -49,13 +49,14 @@ const styles = StyleSheet.create({
     width: '100%',
     backgroundColor: colors.inputBg,
     borderRadius: 12,
-    paddingVertical: 14,
+    paddingVertical: 15,
     paddingHorizontal: 16,
     flexDirection: 'row',
     alignItems: 'center',
     gap: 10,
     borderWidth: 1,
     borderColor: colors.borderMid,
+    opacity: 0.8,
   },
   input: {
     flex: 1,

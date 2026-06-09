@@ -21,3 +21,4 @@ export const colors = {
   chipText: '#555555',
   navbarBg: '#ffffff',
 }
+

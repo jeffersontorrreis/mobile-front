@@ -15,9 +15,9 @@ function Header({ query, onChangeQuery }: { query: string; onChangeQuery: (t: st
   return (
     <View style={styles.header}>
       <View style={styles.locRow}>
-        <Ionicons name="location-outline" size={18} color="#8ecfa8" />
-        <Text style={styles.locText}>Ananindeua, PA</Text>
-        <Ionicons name="chevron-down-outline" size={15} color="#8ecfa8" />
+        
+        <Text style={styles.locText}>Olá, Jefferson Torres</Text>
+        
       </View>
       <View style={styles.searchBar}>
         <Ionicons name="search-outline" size={16} color="rgba(255,255,255,0.5)" />
